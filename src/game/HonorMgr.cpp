@@ -558,7 +558,7 @@ float HonorMaintenancer::CalculateRpDecay(float rpEarning, float rp)
     if (delta < -2500)
         delta = -2500;
 
-    return rp + delta;
+    return rp/* + delta*/; // Kalimdor Gaming - no RP decay
 }
 
 float HonorMaintenancer::MaximumRpAtLevel(uint8 level)
